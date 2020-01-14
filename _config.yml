@@ -6,8 +6,8 @@ title: GOS Shit                             # used in <title> tag & site header
 author: Вежливый лось                        # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Всякая всячина про султанов
-slogan: Showtime!                           # used in site header, beside title
-avatar: /i/av.png                       # used as portrait in site header
+slogan: happens                           # used in site header, beside title
+avatar: /i/av2.png                       # used as portrait in site header
 banner: /i/mountains.svg                    # used as background in site header
 url: "https://flicus.github.io"              # used by plugins to generate feed.xml and sitemap.xml
 baseurl: "/gos"                                 # prepended to all absolute filepaths
@@ -19,36 +19,15 @@ nav_menu:
   - name: Posts
     url: /
     icon: /i/icons.svg#posts # icons should be 24x24 px.
-  - name: Projects
-    url: /projects
-    icon: /i/icons.svg#portfolio
   - name: GitHub
-    url: https://github.com/rlue/
+    url: https://github.com/flicus/
     icon: /i/icons.svg#github
     outbound: true      # this key sets a link to open in a new window.
   - name: Contact
     scheme: mailto      # these keys enable email obfuscation.
-    handle: hello       # you know, to protect you from bots. (handle and domain
-    domain: github.com  # are separated in case bots crawl GitHub repos, too.)
+    handle: flicus       # you know, to protect you from bots. (handle and domain
+    domain: gmail.com  # are separated in case bots crawl GitHub repos, too.)
     icon: /i/icons.svg#email
-
-# Objects listed here will appear on the /projects.html page.
-projects:
-  - title: Solana
-    teaser: A responsive blog template written in Sass and vanilla JavaScript.
-    url: https://github.com/rlue/jekyll-solana
-    role: Creator
-    category: Frontend Dev
-  - title: Cortana
-    teaser: A talking robot. Now available on Google Play?
-    url: https://play.google.com/store/apps/details?id=com.microsoft.cortana
-    role: Core Team
-    category: NLP
-  - title: Rihanna
-    teaser: Possibly another robot. Also available on Google Play.
-    url: https://play.google.com/store/music/artist/Rihanna?id=Arcw2m2ih45qntv3fufub25tyhu
-    role: Contributor
-    category: Algorithmic Composition
 
 #################
 # Site Settings #

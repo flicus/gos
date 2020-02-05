@@ -31,7 +31,11 @@ layout: default
 
   <ul class="{{ item_type }}__list {{ item_type }}--{{ page_type }}__list">
     {% for item in pool %}
-      <li class="{{ item_type }}__entry {{ item_type }}--{{ page_type }}__entry">
+      {% if item.blueprint %}
+        <li class="{{ item_type }}__entry {{ item_type }}--{{ page_type }}__entry blueprint">
+      {% else %}
+        <li class="{{ item_type }}__entry {{ item_type }}--{{ page_type }}__entry">
+      {% endif %}
         {% if item_type == 'posts' %}
           <time class="posts__entry-date posts__entry-date--{{ page_type }}" datetime="{{ item.date | date_to_xmlschema }}">
             {{ item.date | date: "%b %-d" }}

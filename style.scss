@@ -690,6 +690,13 @@
   }
 }
 
+.blueprint {
+  display: none !important;
+}
+
+.blueprint-header {
+  color: $solarized_yellow;
+}
 
 /* # 7) Trumps
  ========================================= */

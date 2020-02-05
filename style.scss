@@ -694,7 +694,8 @@
   display: none !important;
 }
 
-.blueprint-header {
+[blueprint-header] {
+ @include heading(1.6);
   color: $solarized_yellow;
 }
 
